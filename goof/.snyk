@@ -6,6 +6,8 @@ patch:
   'npm:debug:20170905':
     - tap > tap-mocha-reporter > debug:
         patched: '2020-07-11T17:59:13.884Z'
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug:
+        patched: '2020-07-11T18:03:25.254Z'
   'npm:hawk:20160119':
     - tap > codecov.io > request > hawk:
         patched: '2020-07-11T17:59:13.884Z'
@@ -29,6 +31,8 @@ patch:
   'npm:ms:20170412':
     - tap > tap-mocha-reporter > debug > ms:
         patched: '2020-07-11T17:59:13.884Z'
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug > ms:
+        patched: '2020-07-11T18:03:25.254Z'
   'npm:request:20160119':
     - tap > codecov.io > request:
         patched: '2020-07-11T17:59:13.884Z'
