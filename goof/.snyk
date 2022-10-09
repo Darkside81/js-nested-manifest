@@ -1,11 +1,13 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.16.0
+version: v1.25.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
     - tap > tap-mocha-reporter > debug:
         patched: '2020-07-11T17:59:13.884Z'
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug:
+        patched: '2022-10-09T22:28:33.640Z'
   'npm:hawk:20160119':
     - tap > codecov.io > request > hawk:
         patched: '2020-07-11T17:59:13.884Z'
@@ -29,9 +31,20 @@ patch:
   'npm:ms:20170412':
     - tap > tap-mocha-reporter > debug > ms:
         patched: '2020-07-11T17:59:13.884Z'
+    - snyk > proxy-agent > pac-proxy-agent > get-uri > debug > ms:
+        patched: '2022-10-09T22:28:33.640Z'
   'npm:request:20160119':
     - tap > codecov.io > request:
         patched: '2020-07-11T17:59:13.884Z'
   'npm:tunnel-agent:20170305':
     - tap > codecov.io > request > tunnel-agent:
         patched: '2020-07-11T17:59:13.884Z'
+  SNYK-JS-LODASH-567746:
+    - tap > nyc > istanbul-lib-instrument > @babel/traverse > lodash:
+        patched: '2022-10-09T22:28:33.640Z'
+    - tap > nyc > istanbul-lib-instrument > @babel/traverse > @babel/generator > lodash:
+        patched: '2022-10-09T22:28:33.640Z'
+    - tap > nyc > istanbul-lib-instrument > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2022-10-09T22:28:33.640Z'
+    - tap > nyc > istanbul-lib-instrument > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2022-10-09T22:28:33.640Z'
